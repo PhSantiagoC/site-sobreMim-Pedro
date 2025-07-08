@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #0a1e3f;
+  line-height: 1.6;
+}
+
+/* Menu */
+nav {
+  background-color: #0a1e3f;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #1e90ff;
+}
+
+/* Conteúdo */
+main {
+  max-width: 700px;
+  margin: 80px auto 40px;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #0a1e3f;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  background-color: #0a1e3f;
+  color: white;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e90ff;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  background-color: #f0f0f0;
+  color: #0a1e3f;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}

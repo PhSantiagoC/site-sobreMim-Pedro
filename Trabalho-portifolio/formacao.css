@@ -1,0 +1,105 @@
+/* Fonte e estilo base */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #0a1e3f;
+  line-height: 1.6;
+}
+
+/* Navegação fixa no topo */
+nav {
+  background-color: #0a1e3f;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #1e90ff;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 850px;
+  margin: 80px auto 40px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+/* Títulos principais */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #0a1e3f;
+  padding-bottom: 10px;
+}
+
+/* Subtítulos */
+h2 {
+  font-size: 1.8rem;
+  color: #1e90ff;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-left: 5px solid #0a1e3f;
+  padding-left: 10px;
+}
+
+/* Listas */
+ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  font-size: 1.15rem;
+}
+
+/* Parágrafos */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  background-color: #f0f0f0;
+  color: #0a1e3f;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  main {
+    margin: 100px 15px 30px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+}
